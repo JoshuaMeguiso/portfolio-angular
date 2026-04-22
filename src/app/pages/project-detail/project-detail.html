@@ -1,0 +1,54 @@
+<div class="container-page py-16 max-w-[900px]">
+  <div class="mb-10">
+    <h1 class="text-3xl font-bold mb-2">
+      {{ project.title }}
+    </h1>
+
+    <p class="text-slate-600">
+      {{ project.description }}
+    </p>
+  </div>
+
+  <div class="space-y-8">
+    <div class="card p-6">
+      <app-section title="Overview">
+        {{ project.overview }}
+      </app-section>
+    </div>
+
+    <div class="card p-6">
+      <app-section title="My Role">
+        {{ project.role }}
+      </app-section>
+    </div>
+
+    <div class="card p-6">
+      <app-section title="Key Features">
+        <ul class="list-disc pl-5 space-y-1">
+          <li *ngFor="let f of project.features">
+            {{ f }}
+          </li>
+        </ul>
+      </app-section>
+    </div>
+
+    <div class="card p-6">
+      <app-section title="Screenshots">
+        <div class="space-y-8">
+          <app-screenshot-block
+            *ngFor="let s of project.screenshots"
+            [image]="s.image"
+            [caption]="s.caption"
+          >
+          </app-screenshot-block>
+        </div>
+      </app-section>
+    </div>
+
+    <div class="card p-6">
+      <app-section title="Challenges & Solutions">
+        {{ project.challenges }}
+      </app-section>
+    </div>
+  </div>
+</div>

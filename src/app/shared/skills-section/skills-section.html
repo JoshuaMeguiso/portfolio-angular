@@ -1,0 +1,61 @@
+<section id="skills" class="py-16">
+  <div class="max-w-[1100px] mx-auto px-4">
+    <app-section title="Skills">
+      <!-- FILTER BUTTONS -->
+      <div class="flex flex-wrap gap-2 mb-8">
+        <button
+          *ngFor="let cat of categories"
+          (click)="setCategory(cat)"
+          class="px-3 py-1 text-xs rounded-full border transition"
+          [ngClass]="{
+            'bg-black text-white': activeCategory === cat,
+            'bg-white text-slate-600 hover:bg-slate-100': activeCategory !== cat,
+          }"
+        >
+          {{ cat }}
+        </button>
+      </div>
+
+      <!-- GROUPED SKILLS -->
+      <div class="space-y-10">
+        <ng-container *ngFor="let group of groupedSkills()">
+          <div>
+            <h3 class="text-xs font-semibold tracking-widest uppercase text-slate-500 mb-4">
+              {{ group.category }}
+            </h3>
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <div
+                *ngFor="let skill of group.skills"
+                class="card p-4 flex items-center justify-between transition hover:shadow-md hover:-translate-y-1"
+              >
+                <!-- LEFT -->
+                <div class="flex items-center gap-3">
+                  <i [class]="skill.iconClass + ' text-xl'"></i>
+
+                  <div>
+                    <p class="text-sm font-medium text-slate-800">
+                      {{ skill.name }}
+                    </p>
+
+                    <p class="text-xs text-slate-500">{{ skill.level }} / {{ skill.maxLevel }}</p>
+                  </div>
+                </div>
+
+                <!-- RIGHT PROGRESS -->
+                <div class="w-32">
+                  <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+                    <div
+                      class="h-2 bg-black rounded-full transition-all duration-700"
+                      [style.width.%]="(skill.level / skill.maxLevel) * 100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </app-section>
+  </div>
+</section>

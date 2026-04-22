@@ -1,0 +1,150 @@
+<!-- HERO -->
+<section id="top" class="py-24 text-center">
+  <div class="max-w-[1100px] mx-auto px-4">
+    <p class="text-xs uppercase tracking-widest text-slate-500 mb-4">
+      Software Engineer • Full Stack Developer
+    </p>
+
+    <h1 class="text-5xl font-bold tracking-tight mb-6">Building scalable business systems</h1>
+
+    <p class="text-slate-600 max-w-2xl mx-auto leading-relaxed">
+      I specialize in designing inventory, payroll, and reporting systems with strong focus on
+      backend logic, data consistency, and real-world workflows.
+    </p>
+
+    <div class="mt-10 flex justify-center gap-4">
+      <a
+        href="#projects"
+        class="px-6 py-2 bg-black text-white rounded-xl hover:bg-slate-800 transition"
+      >
+        View Projects
+      </a>
+
+      <a
+        href="#contact"
+        class="px-6 py-2 border border-slate-300 rounded-xl hover:bg-white transition"
+      >
+        Contact
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" id="projects" class="py-16">
+  <div class="max-w-[1100px] mx-auto px-4">
+    <h2 class="text-2xl font-semibold mb-6">Projects</h2>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <app-project-card *ngFor="let p of projects" [project]="p"></app-project-card>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<app-skills-section></app-skills-section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20">
+  <div class="max-w-[1100px] mx-auto px-4">
+    <app-section title="Contact">
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- LEFT: Info -->
+        <div>
+          <h2 class="text-2xl font-semibold mb-4">Let’s work together</h2>
+
+          <p class="text-slate-600 leading-relaxed mb-6">
+            I’m currently open to software engineering opportunities, freelance projects, or
+            collaboration on full-stack systems.
+          </p>
+
+          <div class="space-y-4 text-sm text-slate-600">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-black"></span>
+              Based in Philippines
+            </div>
+
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-black"></span>
+              Available for full-time / freelance work
+            </div>
+
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-black"></span>
+              Backend + Full Stack Development
+            </div>
+          </div>
+
+          <!-- Socials -->
+          <div class="flex gap-4 mt-6 text-sm">
+            <a
+              href="mailto:your.email@example.com"
+              class="text-slate-600 hover:text-black transition"
+            >
+              Email
+            </a>
+
+            <a
+              href="https://github.com/"
+              target="_blank"
+              class="text-slate-600 hover:text-black transition"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="https://linkedin.com/"
+              target="_blank"
+              class="text-slate-600 hover:text-black transition"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: FORM -->
+        <div class="card p-6">
+          <form class="space-y-4">
+            <!-- Name -->
+            <div>
+              <label class="text-xs text-slate-500">Name</label>
+              <input
+                type="text"
+                placeholder="Your name"
+                class="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black/10"
+              />
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label class="text-xs text-slate-500">Email</label>
+              <input
+                type="email"
+                placeholder="you@example.com"
+                class="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black/10"
+              />
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label class="text-xs text-slate-500">Message</label>
+              <textarea
+                rows="4"
+                placeholder="Tell me about your project..."
+                class="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black/10"
+              ></textarea>
+            </div>
+
+            <!-- Button -->
+            <button
+              type="button"
+              class="w-full bg-black text-white py-2 rounded-xl hover:bg-slate-800 transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </app-section>
+  </div>
+</section>
