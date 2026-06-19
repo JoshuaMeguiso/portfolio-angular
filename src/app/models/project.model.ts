@@ -14,6 +14,11 @@ export interface Project {
 
   tech: Tech[];
 
+  links?: {
+    live?: string;
+    github?: string;
+  };
+
   screenshots?: {
     image: string;
     caption: string;

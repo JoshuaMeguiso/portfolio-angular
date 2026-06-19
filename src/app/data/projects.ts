@@ -1,37 +1,39 @@
 import { Project } from '../models/project.model';
 
 export const PROJECTS: Project[] = [
-  // Inventory
   {
-    slug: 'inventory-system',
-    title: 'Inventory Management System',
+    slug: 'enterprise-management-system',
+    title: 'Enterprise Management System (ERP-like Platform)',
     description:
-      'A configurable inventory system supporting multi-unit stock tracking, stock movement, and client-specific reporting requirements.',
+      'A modular enterprise system consisting of inventory, payroll, and accounting subsystems with integrated operational and financial data flow.',
 
     overview:
-      'Built a full-stack inventory management system designed to handle real-world warehouse operations including stock in/out transactions, unit of measure conversions, and dynamic reporting. The system was designed to be highly customizable per client workflow requirements.',
+      'Built a modular enterprise management system designed to unify core business operations including inventory tracking, payroll processing, and financial reporting. The system follows a shared data architecture where operational modules feed into accounting for consolidated reporting and business insights.',
 
-    role: 'Full-stack developer responsible for implementing stock movement logic, unit conversion handling, reporting modules, and REST API development.',
+    role:
+      'Full-stack developer responsible for designing and implementing core business modules including inventory, payroll, and accounting subsystems, as well as ensuring cross-module data consistency and API integration.',
 
     features: [
-      'Stock in/out transaction tracking with audit history',
-      'Multi-Unit of Measure (UoM) conversion and normalization',
-      'Beginning inventory and physical count reconciliation',
-      'Dynamic client-specific reporting structure',
-      'Real-time stock quantity computation',
-      'Role-based access for inventory operations',
+      'Modular architecture separating inventory, payroll, and accounting domains',
+      'Centralized data flow between operational and financial subsystems',
+      'Role-based access control across modules',
+      'Unified reporting layer for business insights',
+      'REST API integration across all subsystems',
+      'Audit-friendly transaction and payroll tracking',
     ],
 
     challenges: [
-      'Handling multiple Unit of Measure (UoM) conversions within a single stock item while maintaining accuracy across transactions',
-      'Reconciling beginning physical count with live stock movements without data inconsistency',
-      'Designing flexible reporting logic adaptable to different client requirements without schema changes',
+      'Ensuring data consistency between inventory, payroll, and accounting modules',
+      'Designing a scalable architecture that supports multiple business domains',
+      'Managing relational dependencies between operational and financial data',
+      'Synchronizing computed payroll and inventory data with accounting summaries',
     ],
 
     impact: [
-      'Improved inventory accuracy by reducing manual reconciliation errors',
-      'Enabled scalable stock tracking across multiple warehouses',
-      'Reduced time required for generating inventory reports through automated aggregation logic',
+      'Improved accuracy of business reporting through centralized data processing',
+      'Reduced inconsistencies between operational and financial records',
+      'Enabled scalable extension of new business modules',
+      'Streamlined enterprise workflows across departments',
     ],
 
     tech: [
@@ -40,118 +42,51 @@ export const PROJECTS: Project[] = [
       { name: 'Express', iconClass: 'devicon-express-original' },
       { name: 'MongoDB', iconClass: 'devicon-mongodb-plain colored' },
     ],
-  },
-  // Payroll
-  {
-    slug: 'payroll-system',
-    title: 'Payroll Management System',
-    description:
-      'A payroll processing system supporting employee attendance integration, deductions, and government contributions.',
 
-    overview:
-      'Developed a payroll system that automates salary computation based on attendance, allowances, deductions, and statutory contributions. The system supports dynamic payroll structures per employee type.',
-
-    role: 'Full-stack developer responsible for payroll computation logic, UI dashboards, and backend salary computation services.',
-
-    features: [
-      'Automated salary computation based on attendance data',
-      'Dynamic allowance and deduction management',
-      'Government contribution calculations (SSS, PhilHealth, Pag-IBIG)',
-      'Payroll period generation and locking system',
-      'Exportable payroll summaries',
-    ],
-
-    challenges: [
-      'Ensuring correctness of payroll computation across varying attendance rules',
-      'Handling dynamic deduction structures per employee category',
-      'Maintaining consistency between frontend calculations and backend validation',
-    ],
-
-    impact: [
-      'Reduced payroll processing time through automation',
-      'Improved accuracy of salary computations',
-      'Enabled scalable payroll processing for multiple employee groups',
-    ],
-
-    tech: [
-      { name: 'React', iconClass: 'devicon-react-original colored' },
-      { name: 'Express', iconClass: 'devicon-express-original' },
-      { name: 'Node.js', iconClass: 'devicon-nodejs-plain colored' },
-      { name: 'MongoDB', iconClass: 'devicon-mongodb-plain colored' },
-    ],
-  },
-  // Accounting
-  {
-    slug: 'accounting-system',
-    title: 'Accounting System (Internal Module Exposure)',
-    description:
-      'A supporting module within an enterprise system focused on financial tracking, reporting, and transaction categorization.',
-
-    overview:
-      'Worked on an internal accounting-related module involving financial data handling, report generation, and integration with inventory and payroll systems. Focus was on ensuring consistency of financial records across operational modules.',
-
-    role: 'Full-stack developer with exposure to financial data workflows, assisting in UI development and backend data structuring for accounting-related reports.',
-
-    features: [
-      'Financial transaction categorization support',
-      'Integration with inventory and payroll data sources',
-      'Basic financial reporting views',
-      'Data consistency validation across modules',
-      'Report aggregation for accounting summaries',
-    ],
-
-    challenges: [
-      'Ensuring consistency of financial data across multiple system modules (inventory and payroll)',
-      'Understanding accounting workflow structure and mapping it to system design',
-      'Handling relational dependencies between operational and financial records',
-    ],
-
-    impact: [
-      'Improved visibility of financial data across system modules',
-      'Helped align operational data (inventory/payroll) with accounting summaries',
-      'Contributed to more structured financial reporting workflows',
-    ],
-
-    tech: [
-      { name: 'React', iconClass: 'devicon-react-original colored' },
-      { name: 'Express', iconClass: 'devicon-express-original' },
-      { name: 'Node.js', iconClass: 'devicon-nodejs-plain colored' },
-      { name: 'MongoDB', iconClass: 'devicon-mongodb-plain colored' },
+    screenshots: [
     ],
   },
   // Business Website
   {
     slug: 'business-website',
-    title: 'Business Website (Internal Project)',
-    description:
-      'A responsive business landing page designed for company presentation and service showcasing.',
+    title: 'Business Website (Client Project)',
+      description:
+      'A responsive business website built for company branding and service presentation.',
 
     overview:
-      'Developed a static business website intended for company branding and service presentation. Focused on responsive UI and clean layout structure.',
+      'Developed a responsive business website using Angular for company branding and service presentation. The project focused on building a clean UI structure, reusable components, and responsive layouts for marketing content. Post-delivery, the project was transitioned to the client/team for deployment and long-term maintenance.',
 
-    role: 'Frontend developer responsible for layout design, responsive implementation, and UI structuring.',
+    role:
+      'Frontend developer responsible for building the Angular application, implementing responsive UI components, and structuring the website layout.',
 
-    features: [
+      features: [
       'Responsive landing page design',
-      'Service and company information sections',
-      'Contact form UI integration',
-      'Mobile-first layout approach',
+      'Company services and information sections',
+      'Contact form UI implementation',
+      'Mobile-first responsive layout',
     ],
 
     challenges: [
-      'Ensuring consistent responsive layout across devices',
-      'Maintaining visual hierarchy for marketing content',
-      'Aligning UI design with business branding requirements',
+      'Building a consistent responsive UI across multiple screen sizes',
+      'Translating design requirements into Angular components',
+      'Maintaining clean and reusable component structure',
     ],
 
     impact: [
-      'Improved company presentation readiness',
-      'Provided reusable UI structure for future marketing pages',
+      'Delivered a production-ready frontend application',
+      'Improved company online presentation through modern UI design',
+      'Provided maintainable Angular codebase for future updates',
     ],
 
     tech: [
       { name: 'Angular', iconClass: 'devicon-angularjs-plain colored' },
       { name: 'Tailwind', iconClass: 'devicon-tailwindcss-plain colored' },
     ],
+
+    links: 
+      {
+        live: "https://auditfixers.com/",
+      }
+    
   },
 ];

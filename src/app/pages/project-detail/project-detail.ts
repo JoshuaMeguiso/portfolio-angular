@@ -3,12 +3,16 @@ import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { PROJECTS } from '../../data/projects';
 import { SectionComponent } from '../../shared/section/section';
-import { ScreenshotBlockComponent } from '../../shared/screenshot-block/screenshot-block';
+// import { ScreenshotBlockComponent } from '../../shared/screenshot-block/screenshot-block';
 
 @Component({
   selector: 'app-project-detail',
   standalone: true,
-  imports: [CommonModule, SectionComponent, ScreenshotBlockComponent],
+  imports: [
+    CommonModule, 
+    SectionComponent, 
+    // ScreenshotBlockComponent
+  ],
   templateUrl: './project-detail.html',
 })
 export class ProjectDetailComponent {

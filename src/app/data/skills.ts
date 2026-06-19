@@ -6,7 +6,7 @@ export const SKILLS: Skill[] = [
   // =========================
   {
     name: 'Angular',
-    level: 75,
+    level: 60,
     maxLevel: 100,
     category: 'Frontend',
     iconClass: 'devicon-angularjs-plain colored',
@@ -20,14 +20,14 @@ export const SKILLS: Skill[] = [
   },
   {
     name: 'Next JS',
-    level: 75,
+    level: 60,
     maxLevel: 100,
     category: 'Frontend',
     iconClass: 'devicon-nextjs-plain colored',
   },
   {
     name: 'Tailwind CSS',
-    level: 70,
+    level: 60,
     maxLevel: 100,
     category: 'Frontend',
     iconClass: 'devicon-tailwindcss-plain colored',
@@ -70,7 +70,7 @@ export const SKILLS: Skill[] = [
   },
   {
     name: 'MySQL',
-    level: 75,
+    level: 60,
     maxLevel: 100,
     category: 'Database',
     iconClass: 'devicon-mysql-plain colored',
@@ -88,7 +88,7 @@ export const SKILLS: Skill[] = [
   },
   {
     name: 'Git Lab',
-    level: 75,
+    level: 50,
     maxLevel: 100,
     category: 'Tools',
     iconClass: 'devicon-gitlab-plain colored',
@@ -102,28 +102,28 @@ export const SKILLS: Skill[] = [
   },
   {
     name: 'TypeScript',
-    level: 85,
+    level: 75,
     maxLevel: 100,
     category: 'Languages',
     iconClass: 'devicon-typescript-plain colored',
   },
   {
     name: 'Python',
-    level: 75,
+    level: 60,
     maxLevel: 100,
     category: 'Languages',
     iconClass: 'devicon-python-plain colored',
   },
   {
     name: 'Java',
-    level: 60,
+    level: 50,
     maxLevel: 100,
     category: 'Languages',
     iconClass: 'devicon-java-plain colored',
   },
   {
     name: 'Amazon Web Services',
-    level: 40,
+    level: 30,
     maxLevel: 100,
     category: 'Cloud / DevOps',
     iconClass: 'devicon-amazonwebservices-plain colored',

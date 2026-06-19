@@ -32,7 +32,7 @@
       </app-section>
     </div>
 
-    <div class="card p-6">
+    <!-- <div class="card p-6">
       <app-section title="Screenshots">
         <div class="space-y-8">
           <app-screenshot-block
@@ -43,11 +43,41 @@
           </app-screenshot-block>
         </div>
       </app-section>
+    </div> -->
+
+    <div class="card p-6" *ngIf="project.links?.live || project.links?.github">
+      <app-section title="Links">
+        <div class="flex flex-col gap-2">
+
+          <a
+            *ngIf="project.links?.live"
+            [href]="project.links.live"
+            target="_blank"
+            class="text-blue-600 hover:underline"
+          >
+            Live Demo
+          </a>
+
+          <a
+            *ngIf="project.links?.github"
+            [href]="project.links.github"
+            target="_blank"
+            class="text-slate-700 hover:underline"
+          >
+            GitHub Repository
+          </a>
+
+        </div>
+      </app-section>
     </div>
 
     <div class="card p-6">
       <app-section title="Challenges & Solutions">
-        {{ project.challenges }}
+        <ul class="list-disc pl-5 space-y-1">
+          <li *ngFor="let c of project.challenges">
+            {{ c }}
+          </li>
+        </ul>
       </app-section>
     </div>
   </div>
