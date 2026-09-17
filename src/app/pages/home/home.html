@@ -1,41 +1,127 @@
 <!-- HERO -->
-<section id="top" class="py-24 text-center">
-  <div class="max-w-[1100px] mx-auto px-4">
-    <p class="text-xs uppercase tracking-widest text-slate-500 mb-4">
-      Software Engineer • Full Stack Developer
-    </p>
+<section id="top" class="hero-band border-b pb-16 border-black/10">
+  <div class="container-page py-28 md:py-36">
+    <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+      <div>
+        <p class="eyebrow mb-5">Software Engineer · Full-stack developer · Philippines</p>
+        <h1 class="display-title max-w-3xl">
+          I build <span class="highlight-word">systems</span> that make complex work feel clear.
+        </h1>
+        <p class="mt-6 max-w-xl text-lg leading-relaxed text-black/65 md:text-xl">
+          I’m Joshua. I design inventory, payroll, reporting, and customer-facing products
+          with dependable backend logic and thoughtful interfaces.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#projects" class="button button-dark">View selected work <span>↗</span></a>
+          <a href="mailto:joshuameguiso@gmail.com" class="button button-light">Let’s talk <span>↗</span></a>
+        </div>
+      </div>
 
-    <h1 class="text-5xl font-bold tracking-tight mb-6">Building scalable business systems</h1>
+      <div class="hero-visual">
+        <div class="system-preview" aria-label="Sample business system dashboard preview">
+          <div class="system-preview-topbar">
+            <span class="system-preview-mark"></span>
+            <span>Operations overview</span>
+            <span class="system-preview-status">Live</span>
+          </div>
+          <div class="system-preview-body">
+            <div class="system-preview-sidebar">
+              <span class="is-active"></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="system-preview-content">
+              <p>Inventory performance</p>
+              <div class="system-preview-metrics">
+                <div><span>Orders</span><strong>248</strong></div>
+                <div><span>Stock health</span><strong>94%</strong></div>
+              </div>
+              <div class="system-preview-chart" aria-hidden="true">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </div>
+              <div class="system-preview-lines" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual-label">
+          <span>Software Engineering</span>
+          <span>Building practical, scalable business applications</span>
+        </div>
+      </div>
+    </div>
 
-    <p class="text-slate-600 max-w-2xl mx-auto leading-relaxed">
-      I specialize in designing inventory, payroll, and reporting systems with strong focus on
-      backend logic, data consistency, and real-world workflows.
-    </p>
+    <!-- <div class="mt-16 grid grid-cols-2 border-t border-black/20 pt-5 md:grid-cols-4">
+      <div class="fact-cell"><strong>01</strong><span>Business systems</span></div>
+      <div class="fact-cell"><strong>02</strong><span>REST API design</span></div>
+      <div class="fact-cell"><strong>03</strong><span>Data consistency</span></div>
+      <div class="fact-cell"><strong>04</strong><span>Responsive products</span></div>
+    </div> -->
+  </div>
+</section>
 
-    <div class="mt-10 flex justify-center gap-4">
-      <a
-        href="#projects"
-        class="px-6 py-2 bg-black text-white rounded-xl hover:bg-slate-800 transition"
-      >
-        View Projects
-      </a>
+<!-- ABOUT -->
+<section id="about" class="section-band">
+  <div class="container-page grid gap-12 py-28 md:py-36 lg:grid-cols-[0.35fr_0.65fr]">
+    <aside class="about-profile">
+      <p class="eyebrow">About me</p>
 
-      <a
-        href="#contact"
-        class="px-6 py-2 border border-slate-300 rounded-xl hover:bg-white transition"
-      >
-        Contact
-      </a>
+      <div class="mt-5 border-t border-black/20 pt-6.5 text-sm">
+        <div class="about-profile-item">
+          <span>Focus</span>
+          <strong>Full-stack systems / Backend development</strong>
+        </div>
+        <div class="about-profile-item">
+          <span>Based in</span>
+          <strong>Philippines</strong>
+        </div>
+        <div class="about-profile-item">
+          <span>Available for</span>
+          <strong>Full-time roles and freelance projects</strong>
+        </div>
+        <div class="about-profile-item">
+          <span>Core strengths</span>
+          <strong>APIs, business workflows, data consistency</strong>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <p class="eyebrow">Links</p>
+        <div class="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+          <a href="mailto:joshuameguiso@gmail.com?subject=Resume%20request" class="about-link">Résumé</a>
+          <a href="https://github.com/JoshuaMeguiso" target="_blank" rel="noopener noreferrer" class="about-link">GitHub</a>
+          <a href="https://www.linkedin.com/in/joshua-uriel-meguiso-0a620b2a0" target="_blank" rel="noopener noreferrer" class="about-link">LinkedIn</a>
+        </div>
+      </div>
+
+      <!-- <p class="mt-4 max-w-xs text-sm leading-relaxed text-black/60">
+        “I build practical software that makes complex work easier.”
+      </p> -->
+    </aside>
+    <div>
+      <h2 class="section-heading">The best software respects the work people already do.</h2>
+      <p class="mt-8 max-w-2xl text-lg leading-relaxed text-black/65">
+        My work sits between product thinking and implementation: understanding the workflow,
+        shaping the data model, then building the interfaces and APIs that keep the whole system
+        dependable.
+      </p>
+      <div class="mt-10 grid gap-5 border-t border-black/15 pt-5 sm:grid-cols-2">
+        <div><p class="eyebrow">Strengths</p><p class="mt-2 font-medium">Architecture · APIs · Business logic · UI systems</p></div>
+        <div><p class="eyebrow">Working style</p><p class="mt-2 font-medium">Clear code, careful data, practical delivery</p></div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" id="projects" class="py-16">
-  <div class="max-w-[1100px] mx-auto px-4">
-    <h2 class="text-2xl font-semibold mb-6">Projects</h2>
+<section id="projects" class="section-band projects-band pt-8 pb-8">
+  <div class="container-page py-28 md:py-36">
+    <div class="mb-12 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+      <div><p class="eyebrow">Selected work</p><h2 class="section-heading mt-3">Projects built around real operations.</h2></div>
+      <p class="max-w-sm text-sm leading-relaxed text-black/60">A growing collection of systems and websites focused on useful workflows, not just attractive screens.</p>
+    </div>
 
-    <div class="grid md:grid-cols-2 gap-6">
+    <div class="grid gap-5 md:grid-cols-2">
       <app-project-card *ngFor="let p of projects" [project]="p"></app-project-card>
     </div>
   </div>
@@ -45,32 +131,29 @@
 <app-skills-section></app-skills-section>
 
 <!-- CONTACT -->
-<section id="contact" class="py-20">
-  <div class="max-w-[1100px] mx-auto px-4">
+<section id="contact" class="contact-band">
+  <div class="container-page md:py-36">
     <app-section title="Contact">
-      <div class="grid md:grid-cols-2 gap-10">
+      <div class="grid gap-10 md:grid-cols-2">
         <!-- LEFT: Info -->
         <div>
-          <h2 class="text-2xl font-semibold mb-4">Let’s work together</h2>
+          <h2 class="section-heading mb-4">Let’s build something useful.</h2>
 
           <p class="text-slate-600 leading-relaxed mb-6">
             I’m currently open to software engineering opportunities, freelance projects, or
             collaboration on full-stack systems.
           </p>
 
-          <div class="space-y-4 text-sm text-slate-600">
-            <div class="flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-black"></span>
+          <div class="space-y-4 text-sm text-black/70">
+            <div class="flex items-center gap-2"><span class="h-2 w-2 bg-[#f5c542]"></span>
               Based in Philippines
             </div>
 
-            <div class="flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-black"></span>
+            <div class="flex items-center gap-2"><span class="h-2 w-2 bg-[#f5c542]"></span>
               Available for full-time / freelance work
             </div>
 
-            <div class="flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-black"></span>
+            <div class="flex items-center gap-2"><span class="h-2 w-2 bg-[#f5c542]"></span>
               Backend + Full Stack Development
             </div>
           </div>
@@ -79,7 +162,7 @@
           <div class="flex gap-4 mt-6 text-sm">
             <a
               href="mailto:joshuameguiso@gmail.com"
-              class="text-slate-600 hover:text-black transition"
+              class="text-black/60 hover:text-black transition"
             >
               Email
             </a>
@@ -87,7 +170,8 @@
             <a
               href="https://github.com/JoshuaMeguiso"
               target="_blank"
-              class="text-slate-600 hover:text-black transition"
+              rel="noopener noreferrer"
+              class="text-black/60 hover:text-black transition"
             >
               GitHub
             </a>
@@ -95,54 +179,31 @@
             <a
               href="https://www.linkedin.com/in/joshua-uriel-meguiso-0a620b2a0"
               target="_blank"
-              class="text-slate-600 hover:text-black transition"
+              rel="noopener noreferrer"
+              class="text-black/60 hover:text-black transition"
             >
               LinkedIn
             </a>
           </div>
         </div>
 
-        <!-- RIGHT: FORM -->
-        <div class="card p-6">
-          <form class="space-y-4">
-            <!-- Name -->
-            <div>
-              <label class="text-xs text-slate-500">Name</label>
-              <input
-                type="text"
-                placeholder="Your name"
-                class="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black/10"
-              />
-            </div>
+        <!-- RIGHT: DIRECT CONTACT -->
+        <div class="contact-card flex flex-col justify-between">
+          <div>
+            <p class="eyebrow">Start a conversation</p>
+            <h2 class="mt-4 text-2xl font-semibold mb-4">Have a system to improve?</h2>
+            <p class="text-black/65 leading-relaxed">
+              Email me with a little context about the product, workflow, or team you have in mind.
+              I’ll reply with the next practical step.
+            </p>
+          </div>
 
-            <!-- Email -->
-            <div>
-              <label class="text-xs text-slate-500">Email</label>
-              <input
-                type="email"
-                placeholder="you@example.com"
-                class="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black/10"
-              />
-            </div>
-
-            <!-- Message -->
-            <div>
-              <label class="text-xs text-slate-500">Message</label>
-              <textarea
-                rows="4"
-                placeholder="Tell me about your project..."
-                class="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black/10"
-              ></textarea>
-            </div>
-
-            <!-- Button -->
-            <button
-              type="button"
-              class="w-full bg-black text-white py-2 rounded-xl hover:bg-slate-800 transition"
-            >
-              Send Message
-            </button>
-          </form>
+          <a
+            href="mailto:joshuameguiso@gmail.com?subject=Portfolio%20inquiry"
+            class="button button-dark mt-8 inline-flex w-full justify-center"
+          >
+            Email Joshua
+          </a>
         </div>
       </div>
     </app-section>

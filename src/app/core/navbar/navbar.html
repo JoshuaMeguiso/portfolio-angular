@@ -1,18 +1,37 @@
-<nav class="sticky top-0 z-50 bg-white/70 backdrop-blur border-b border-slate-200">
-  <div class="max-w-[1100px] mx-auto px-4 py-4 flex justify-between items-center">
-    <div class="font-semibold tracking-tight text-lg">
-      Joshua Meguiso
-      <span class="text-xs text-slate-400 ml-2">Software Engineer</span>
+<nav aria-label="Primary navigation" class="sticky top-0 z-50 border-b border-black/10 bg-[#f8f5ed]/90 backdrop-blur">
+  <div class="max-w-[1100px] mx-auto px-4 py-4">
+    <div class="flex justify-between items-center">
+      <div class="font-semibold tracking-tight text-lg text-black">
+        Joshua Meguiso<span class="text-[#f5c542]">.</span>
+        <span class="ml-2 text-xs font-normal text-black/50">Software Engineer</span>
+      </div>
+
+      <div class="hidden md:flex items-center gap-6 text-sm text-slate-600">
+        <a routerLink="/" fragment="top" class="hover:text-black transition">Home</a>
+        <a routerLink="/" fragment="projects" class="hover:text-black transition">Projects</a>
+        <a routerLink="/" fragment="skills" class="hover:text-black transition">Skills</a>
+        <a routerLink="/" fragment="contact" class="hover:text-black transition">Contact</a>
+      </div>
+
+      <button
+        type="button"
+        class="md:hidden inline-flex items-center justify-center rounded-lg border border-black/15 p-2 text-black hover:bg-[#f5c542] transition"
+        aria-controls="mobile-navigation"
+        [attr.aria-expanded]="isMenuOpen"
+        aria-label="Toggle navigation menu"
+        (click)="toggleMenu()"
+      >
+        <span aria-hidden="true" class="text-lg leading-none">{{ isMenuOpen ? '×' : '☰' }}</span>
+      </button>
     </div>
 
-    <div class="flex gap-6 text-sm text-slate-600">
-      <a routerLink="/" fragment="top" class="hover:text-black transition"> Home </a>
-
-      <a routerLink="/" fragment="projects" class="hover:text-black transition"> Projects </a>
-
-      <a routerLink="/" fragment="skills" class="hover:text-black transition"> Skills </a>
-
-      <a routerLink="/" fragment="contact" class="hover:text-black transition"> Contact </a>
+    <div id="mobile-navigation" class="md:hidden pt-4" [class.hidden]="!isMenuOpen">
+      <div class="flex flex-col gap-1 border-t border-slate-200 pt-3 text-sm text-slate-600">
+        <a routerLink="/" fragment="top" (click)="closeMenu()" class="rounded-lg px-3 py-2 hover:bg-slate-100 hover:text-black transition">Home</a>
+        <a routerLink="/" fragment="projects" (click)="closeMenu()" class="rounded-lg px-3 py-2 hover:bg-slate-100 hover:text-black transition">Projects</a>
+        <a routerLink="/" fragment="skills" (click)="closeMenu()" class="rounded-lg px-3 py-2 hover:bg-slate-100 hover:text-black transition">Skills</a>
+        <a routerLink="/" fragment="contact" (click)="closeMenu()" class="rounded-lg px-3 py-2 hover:bg-slate-100 hover:text-black transition">Contact</a>
+      </div>
     </div>
   </div>
 </nav>

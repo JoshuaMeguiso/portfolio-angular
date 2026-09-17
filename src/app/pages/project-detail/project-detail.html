@@ -1,32 +1,53 @@
-<div class="container-page py-16 max-w-[900px]">
+<div class="project-detail-page container-page max-w-[900px]" *ngIf="project as currentProject">
   <div class="mb-10">
     <h1 class="text-3xl font-bold mb-2">
-      {{ project.title }}
+      {{ currentProject.title }}
     </h1>
 
     <p class="text-slate-600">
-      {{ project.description }}
+      {{ currentProject.description }}
     </p>
   </div>
 
   <div class="space-y-8">
     <div class="card p-6">
       <app-section title="Overview">
-        {{ project.overview }}
+        {{ currentProject.overview }}
       </app-section>
     </div>
 
     <div class="card p-6">
       <app-section title="My Role">
-        {{ project.role }}
+        {{ currentProject.role }}
+      </app-section>
+    </div>
+
+    <div class="card p-6">
+      <app-section title="Technology">
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-chip" *ngFor="let tech of currentProject.tech">
+            <i [class]="tech.iconClass + ' text-lg'"></i>
+            {{ tech.name }}
+          </span>
+        </div>
       </app-section>
     </div>
 
     <div class="card p-6">
       <app-section title="Key Features">
         <ul class="list-disc pl-5 space-y-1">
-          <li *ngFor="let f of project.features">
+          <li *ngFor="let f of currentProject.features">
             {{ f }}
+          </li>
+        </ul>
+      </app-section>
+    </div>
+
+    <div class="card p-6" *ngIf="currentProject.impact.length">
+      <app-section title="Impact">
+        <ul class="list-disc pl-5 space-y-1">
+          <li *ngFor="let item of currentProject.impact">
+            {{ item }}
           </li>
         </ul>
       </app-section>
@@ -45,23 +66,25 @@
       </app-section>
     </div> -->
 
-    <div class="card p-6" *ngIf="project.links?.live || project.links?.github">
+    <div class="card p-6" *ngIf="currentProject.links as links">
       <app-section title="Links">
         <div class="flex flex-col gap-2">
 
           <a
-            *ngIf="project.links?.live"
-            [href]="project.links.live"
+            *ngIf="links.live"
+            [href]="links.live"
             target="_blank"
+            rel="noopener noreferrer"
             class="text-blue-600 hover:underline"
           >
             Live Demo
           </a>
 
           <a
-            *ngIf="project.links?.github"
-            [href]="project.links.github"
+            *ngIf="links.github"
+            [href]="links.github"
             target="_blank"
+            rel="noopener noreferrer"
             class="text-slate-700 hover:underline"
           >
             GitHub Repository
@@ -74,11 +97,19 @@
     <div class="card p-6">
       <app-section title="Challenges & Solutions">
         <ul class="list-disc pl-5 space-y-1">
-          <li *ngFor="let c of project.challenges">
+          <li *ngFor="let c of currentProject.challenges">
             {{ c }}
           </li>
         </ul>
       </app-section>
     </div>
   </div>
+</div>
+
+<div class="project-detail-page container-page" *ngIf="!project">
+  <h1 class="text-3xl font-bold mb-3">Project not found</h1>
+  <p class="text-slate-600">
+    This project may have moved. Return to the <a routerLink="/" class="underline">home page</a>
+    to view the current project list.
+  </p>
 </div>

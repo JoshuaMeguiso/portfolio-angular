@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ScreenshotBlock } from './screenshot-block';
+import { ScreenshotBlockComponent } from './screenshot-block';
 
-describe('ScreenshotBlock', () => {
-  let component: ScreenshotBlock;
-  let fixture: ComponentFixture<ScreenshotBlock>;
+describe('ScreenshotBlockComponent', () => {
+  let component: ScreenshotBlockComponent;
+  let fixture: ComponentFixture<ScreenshotBlockComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ScreenshotBlock]
+      imports: [ScreenshotBlockComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ScreenshotBlock);
+    fixture = TestBed.createComponent(ScreenshotBlockComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
