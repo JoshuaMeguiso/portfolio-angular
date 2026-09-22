@@ -4,4 +4,5 @@ export interface Skill {
   maxLevel: number;
   category: string;
   iconClass: string;
+  proficiency: string;
 }

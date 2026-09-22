@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SKILLS } from '../../data/skills';
+import { Skill } from '../../models/skill.model';
 import { SectionComponent } from '../section/section';
 
 @Component({
@@ -16,6 +17,10 @@ export class SkillsSectionComponent {
 
   categories = ['All', ...new Set(this.skills.map((s) => s.category))];
 
+  get coreStrengths() {
+    return this.skills.filter((skill) => skill.proficiency === 'Core strength').length;
+  }
+
   setCategory(cat: string) {
     this.activeCategory = cat;
   }
@@ -25,8 +30,12 @@ export class SkillsSectionComponent {
     return this.skills.filter((s) => s.category === this.activeCategory);
   }
 
+  categoryCount(category: string) {
+    return category === 'All' ? this.skills.length : this.skills.filter((skill) => skill.category === category).length;
+  }
+
   groupedSkills() {
-    const map = new Map<string, any[]>();
+    const map = new Map<string, Skill[]>();
 
     this.filteredSkills.forEach((skill) => {
       if (!map.has(skill.category)) {

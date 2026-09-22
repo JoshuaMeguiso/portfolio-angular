@@ -10,6 +10,7 @@ export const SKILLS: Skill[] = [
     maxLevel: 100,
     category: 'Frontend',
     iconClass: 'devicon-react-original colored',
+    proficiency: 'Core strength',
   },
   {
     name: 'Angular',
@@ -17,6 +18,7 @@ export const SKILLS: Skill[] = [
     maxLevel: 100,
     category: 'Frontend',
     iconClass: 'devicon-angularjs-plain colored',
+    proficiency: 'Working knowledge',
   },
   {
     name: 'Next.js',
@@ -24,6 +26,7 @@ export const SKILLS: Skill[] = [
     maxLevel: 100,
     category: 'Frontend',
     iconClass: 'devicon-nextjs-plain colored',
+    proficiency: 'Familiarity',
   },
   {
     name: 'Tailwind CSS',
@@ -31,6 +34,7 @@ export const SKILLS: Skill[] = [
     maxLevel: 100,
     category: 'Frontend',
     iconClass: 'devicon-tailwindcss-plain colored',
+    proficiency: 'Working knowledge',
   },
 
   // =========================
@@ -42,6 +46,7 @@ export const SKILLS: Skill[] = [
     maxLevel: 100,
     category: 'Backend',
     iconClass: 'devicon-nodejs-plain colored',
+    proficiency: 'Core strength',
   },
   {
     name: 'Express.js',
@@ -49,6 +54,7 @@ export const SKILLS: Skill[] = [
     maxLevel: 100,
     category: 'Backend',
     iconClass: 'devicon-express-original colored',
+    proficiency: 'Core strength',
   },
   {
     name: 'Django',
@@ -56,6 +62,7 @@ export const SKILLS: Skill[] = [
     maxLevel: 100,
     category: 'Backend',
     iconClass: 'devicon-django-plain colored',
+    proficiency: 'Familiarity',
   },
   {
     name: 'REST APIs',
@@ -63,6 +70,7 @@ export const SKILLS: Skill[] = [
     maxLevel: 100,
     category: 'Backend',
     iconClass: 'devicon-fastapi-plain colored',
+    proficiency: 'Core strength',
   },
 
   // =========================
@@ -74,6 +82,7 @@ export const SKILLS: Skill[] = [
     maxLevel: 100,
     category: 'Database',
     iconClass: 'devicon-mongodb-plain colored',
+    proficiency: 'Core strength',
   },
   {
     name: 'Mongoose',
@@ -81,6 +90,7 @@ export const SKILLS: Skill[] = [
     maxLevel: 100,
     category: 'Database',
     iconClass: 'devicon-mongoose-original colored',
+    proficiency: 'Core strength',
   },
   {
     name: 'MySQL',
@@ -88,6 +98,7 @@ export const SKILLS: Skill[] = [
     maxLevel: 100,
     category: 'Database',
     iconClass: 'devicon-mysql-plain colored',
+    proficiency: 'Working knowledge',
   },
   {
     name: 'SQL',
@@ -95,6 +106,7 @@ export const SKILLS: Skill[] = [
     maxLevel: 100,
     category: 'Database',
     iconClass: 'devicon-azuresqldatabase-plain colored',
+    proficiency: 'Familiarity',
   },
 
   // =========================
@@ -106,6 +118,7 @@ export const SKILLS: Skill[] = [
     maxLevel: 100,
     category: 'Languages',
     iconClass: 'devicon-javascript-plain colored',
+    proficiency: 'Core strength',
   },
   {
     name: 'TypeScript',
@@ -113,6 +126,7 @@ export const SKILLS: Skill[] = [
     maxLevel: 100,
     category: 'Languages',
     iconClass: 'devicon-typescript-plain colored',
+    proficiency: 'Working knowledge',
   },
   {
     name: 'Python',
@@ -120,6 +134,7 @@ export const SKILLS: Skill[] = [
     maxLevel: 100,
     category: 'Languages',
     iconClass: 'devicon-python-plain colored',
+    proficiency: 'Familiarity',
   },
 
   // =========================
@@ -131,6 +146,7 @@ export const SKILLS: Skill[] = [
     maxLevel: 100,
     category: 'Tools',
     iconClass: 'devicon-git-plain colored',
+    proficiency: 'Core strength',
   },
   {
     name: 'GitHub',
@@ -138,5 +154,6 @@ export const SKILLS: Skill[] = [
     maxLevel: 100,
     category: 'Tools',
     iconClass: 'devicon-github-original colored',
+    proficiency: 'Core strength',
   },
 ];
