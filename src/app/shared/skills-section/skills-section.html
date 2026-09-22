@@ -38,7 +38,9 @@
                       {{ skill.name }}
                     </p>
 
-                    <p class="text-xs text-black/45">Core working knowledge</p>
+                    <p class="text-xs text-black/45">
+                      {{ skill.level >= 80 ? 'Core strength' : skill.level >= 60 ? 'Working knowledge' : 'Familiarity' }}
+                    </p>
                   </div>
                 </div>
 

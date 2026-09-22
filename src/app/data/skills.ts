@@ -5,13 +5,6 @@ export const SKILLS: Skill[] = [
   // FRONTEND
   // =========================
   {
-    name: 'Angular',
-    level: 60,
-    maxLevel: 100,
-    category: 'Frontend',
-    iconClass: 'devicon-angularjs-plain colored',
-  },
-  {
     name: 'React',
     level: 90,
     maxLevel: 100,
@@ -19,8 +12,15 @@ export const SKILLS: Skill[] = [
     iconClass: 'devicon-react-original colored',
   },
   {
-    name: 'Next JS',
+    name: 'Angular',
     level: 60,
+    maxLevel: 100,
+    category: 'Frontend',
+    iconClass: 'devicon-angularjs-plain colored',
+  },
+  {
+    name: 'Next.js',
+    level: 45,
     maxLevel: 100,
     category: 'Frontend',
     iconClass: 'devicon-nextjs-plain colored',
@@ -50,6 +50,20 @@ export const SKILLS: Skill[] = [
     category: 'Backend',
     iconClass: 'devicon-express-original colored',
   },
+  {
+    name: 'Django',
+    level: 40,
+    maxLevel: 100,
+    category: 'Backend',
+    iconClass: 'devicon-django-plain colored',
+  },
+  {
+    name: 'REST APIs',
+    level: 85,
+    maxLevel: 100,
+    category: 'Backend',
+    iconClass: 'devicon-fastapi-plain colored',
+  },
 
   // =========================
   // DATABASE
@@ -75,24 +89,17 @@ export const SKILLS: Skill[] = [
     category: 'Database',
     iconClass: 'devicon-mysql-plain colored',
   },
+  {
+    name: 'SQL',
+    level: 55,
+    maxLevel: 100,
+    category: 'Database',
+    iconClass: 'devicon-azuresqldatabase-plain colored',
+  },
 
   // =========================
-  // GENERAL / TOOLING
+  // LANGUAGES
   // =========================
-  {
-    name: 'Git',
-    level: 90,
-    maxLevel: 100,
-    category: 'Tools',
-    iconClass: 'devicon-git-plain colored',
-  },
-  {
-    name: 'Git Lab',
-    level: 50,
-    maxLevel: 100,
-    category: 'Tools',
-    iconClass: 'devicon-gitlab-plain colored',
-  },
   {
     name: 'JavaScript',
     level: 90,
@@ -102,30 +109,34 @@ export const SKILLS: Skill[] = [
   },
   {
     name: 'TypeScript',
-    level: 75,
+    level: 70,
     maxLevel: 100,
     category: 'Languages',
     iconClass: 'devicon-typescript-plain colored',
   },
   {
     name: 'Python',
-    level: 60,
+    level: 50,
     maxLevel: 100,
     category: 'Languages',
     iconClass: 'devicon-python-plain colored',
   },
+
+  // =========================
+  // TOOLS
+  // =========================
   {
-    name: 'Java',
-    level: 50,
+    name: 'Git',
+    level: 90,
     maxLevel: 100,
-    category: 'Languages',
-    iconClass: 'devicon-java-plain colored',
+    category: 'Tools',
+    iconClass: 'devicon-git-plain colored',
   },
   {
-    name: 'Amazon Web Services',
-    level: 30,
+    name: 'GitHub',
+    level: 85,
     maxLevel: 100,
-    category: 'Cloud / DevOps',
-    iconClass: 'devicon-amazonwebservices-plain colored',
+    category: 'Tools',
+    iconClass: 'devicon-github-original colored',
   },
 ];
