@@ -11,7 +11,7 @@ export const PROJECTS: Project[] = [
       'Built a modular enterprise management system designed to unify core business operations including inventory tracking, payroll processing, and financial reporting. The system follows a shared data architecture where operational modules feed into accounting for consolidated reporting and business insights.',
 
     role:
-      'Full-stack developer responsible for designing and implementing core business modules including inventory, payroll, and accounting subsystems, as well as ensuring cross-module data consistency and API integration.',
+      'Software Engineer responsible for designing and implementing core business modules including inventory, payroll, and accounting subsystems, as well as ensuring cross-module data consistency and API integration.',
 
     features: [
       'Modular architecture separating inventory, payroll, and accounting domains',
